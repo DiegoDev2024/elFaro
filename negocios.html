@@ -5,59 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/imgs/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Negocios - El Faro</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="title">
-                <h1>El Faro</h1>
-            </div>
-            <div class="subtitulo">
-                <p>Tu noticia veraz cada día</p>
-            </div>
-            <div class="logo">
-                <img src="assets/imgs/logo.png" alt="Logo de Periódico El Faro" class="logo">
-            </div>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h4">El Faro</h1>
+            <p class="m-0">Tu noticia veraz cada día</p>
+            <img src="assets/imgs/logo.png" alt="Logo de Periódico El Faro" class="logo img-fluid" style="width: 80px;">
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="deportes.html">Deportes</a></li>
-            <li><a href="negocios.html">Negocios</a></li>
-        </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">El Faro</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="deportes.html">Deportes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="negocios.html">Negocios</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <section class="news-section">
-        <h2>NEGOCIOS</h2>
-        <table class="news-table">
-            <tr>
-                <td>
-                    <h3>Una megaderrota para las megatecnológicas</h3>
-                    <h6>Economía Empresarial</h6>
-                    <img src="assets/imgs/derrota.jpeg" alt="Foto de billete cayendo">
-                    <p>El año pasado, el Gobierno del presidente de EE UU Joe Biden enfureció a los lobistas de las megatecnológicas y otras empresas que se lucran con nuestros datos personales...</p>
-                </td>
-                <td>
-                    <h3>Europa y una inteligencia artificial responsable</h3>
-                    <h6>Europa</h6>
-                    <img src="assets/imgs/iaresponsable.jpeg" alt="Foto de una mano robótica con libros de fondo">
-                    <p>La inteligencia artificial (IA) ha experimentado un crecimiento exponencial en los últimos años, transformando la economía global...</p>
-                </td>
-                <td>
-                    <h3>Desestiman caso de Musk contra grupo de vigilancia del discurso</h3>
-                    <h6>Legal</h6>
-                    <img src="assets/imgs/elon.jpeg" alt="Foto de Elon Musk dueño de X antigua Twitter">
-                    <p>Un juez federal desestimó este lunes una demanda que interpuso X, empresa de Elon Musk, contra un grupo de vigilancia por sus reportes de discursos de odio en la red social...</p>
-                </td>
-            </tr>
-        </table>
+
+    <!-- News Section -->
+    <section class="news-section my-5">
+        <div class="container">
+            <h2 class="text-center mb-4">NEGOCIOS</h2>
+            <div class="row">
+                <!-- First news item -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/imgs/derrota.jpeg" class="card-img-top" alt="Foto de billete cayendo">
+                        <div class="card-body">
+                            <h5 class="card-title">Una megaderrota para las megatecnológicas</h5>
+                            <h6 class="text-muted">Economía Empresarial</h6>
+                            <p class="card-text">El año pasado, el Gobierno del presidente de EE UU Joe Biden enfureció a los lobistas de las megatecnológicas...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second news item -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/imgs/iaresponsable.jpeg" class="card-img-top" alt="Foto de una mano robótica">
+                        <div class="card-body">
+                            <h5 class="card-title">Europa y una inteligencia artificial responsable</h5>
+                            <h6 class="text-muted">Europa</h6>
+                            <p class="card-text">La inteligencia artificial (IA) ha experimentado un crecimiento exponencial en los últimos años, transformando la economía global...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Third news item -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="assets/imgs/elon.jpeg" class="card-img-top" alt="Foto de Elon Musk">
+                        <div class="card-body">
+                            <h5 class="card-title">Desestiman caso de Musk contra grupo de vigilancia del discurso</h5>
+                            <h6 class="text-muted">Legal</h6>
+                            <p class="card-text">Un juez federal desestimó una demanda que interpuso X, empresa de Elon Musk, contra un grupo de vigilancia por sus reportes de discursos de odio...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer class="footer">
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2024 Periódico El Faro</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
